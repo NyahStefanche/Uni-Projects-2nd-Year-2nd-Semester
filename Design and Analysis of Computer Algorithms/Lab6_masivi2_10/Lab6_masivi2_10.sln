@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab6_masivi2_10", "Lab6_masivi2_10.vcxproj", "{A6DFE1DB-463C-4E34-AD77-831C03A80356}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Debug|x64.ActiveCfg = Debug|x64
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Debug|x64.Build.0 = Debug|x64
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Debug|x86.ActiveCfg = Debug|Win32
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Debug|x86.Build.0 = Debug|Win32
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Release|x64.ActiveCfg = Release|x64
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Release|x64.Build.0 = Release|x64
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Release|x86.ActiveCfg = Release|Win32
+		{A6DFE1DB-463C-4E34-AD77-831C03A80356}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {883B2274-F1D4-4572-8449-2278BC05ADCB}
+	EndGlobalSection
+EndGlobal
