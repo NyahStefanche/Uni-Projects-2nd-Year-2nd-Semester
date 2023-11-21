@@ -1,0 +1,68 @@
+Зад.1
+@echo off
+IF EXIST %1 (
+echo File %1 is running
+%1 
+) ELSE (
+ECHO File %1 does not exist
+)
+
+Зад.2
+IF NOT EXIST %1 GOTO ET1
+IF "%2"=="/W" TYPE %1
+IF !%2==!/C COPY %1 D:\
+IF '%2'=='/E' NOTEPAD %1
+IF %2==/D DEL %1 /P
+GOTO :EOF
+:ET1
+ECHO File %1 does not exist
+
+Зад.3
+@echo off
+SET /P F="Enter folder -->"
+XCOPY %F% %1 /S
+IF NOT ERRORLEVEL 4 DIR %1 /S ELSE (
+ECHO ErrorLevel is greater or equal 4
+)
+
+Зад.4
+SET /A S=%1 %2 %3
+ECHO Res=%S%
+
+Зад.5
+$echo off
+SET /P S="Enter number -->"
+:ET1
+SET /P Op="Enter operation -->"
+
+IF %Op%==. GOTO :EOF
+SET /P B="Enter number -->"
+SET /A S=%S% %Op% %B%
+ECHO Res=%S%
+GOTO ET1
+
+Зад.6
+CD %1
+FOR %%i IN (*.OLD,*.BAK,*.TMP) DO REN %%i *.FD
+
+Алтернативен за изтриване на Зад.6
+CD %1
+FOR %%i IN (*.OLD,*.BAK,*.TMP) DO DEL %%i
+
+Зад.7
+:ET1
+IF [%1]==[] GOTO :EOF
+CD %1
+FOR %%i IN (*.OLD,*.BAK,*.TMP) DO REN %%i *.FD
+SHIFT 
+GOTO ET1
+
+Зад.8
+:ET1
+IF EXIST %1 (
+echo File %1 is running
+%1 
+) ELSE (
+ECHO No Flash,Change it
+GOTO ET1
+)
